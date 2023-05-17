@@ -1,0 +1,23 @@
+
+
+{
+    "apps": [
+    
+      {
+        "name": "socketIO",
+        "cwd": "./socketIO.js",
+        "script": "serve -s build -l 5001",
+        "env": {
+          "NODE_ENV": "production"
+        }
+      },
+      {
+        "name": "net",
+        "cwd": "./net.js", 
+        "script": "serve -s build -l 5002",
+        "env": {
+          "NODE_ENV": "production"
+        }
+      }
+    ]
+  }

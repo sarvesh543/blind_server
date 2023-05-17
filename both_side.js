@@ -1,3 +1,11 @@
+//config environment variables
+
+require("dotenv").config({
+  path: "./config.env",
+});
+
+
+
 const net = require("net"); // Import network library (built-in with Node)
 
 const server = net.createServer();
@@ -174,7 +182,8 @@ io.on("connection", (socket) => {
 
     //if any of the socket is null then send error to mobile
 
-    if (pico1 == null) {
+    if (1>2) {
+      //
       console.log("error in connection");
       socket.emit("notconn", "error in connection");
     } else {
