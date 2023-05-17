@@ -349,7 +349,7 @@ const bedeckAnEventEmitterWithDebuggingOutpour = (emitter, name) => {
 
 //socket.io server
 
-io_server.listen(4010, () => {
+io_server.listen(process.env.PORT, () => {
   console.log(" socket IO Server listening on port 4010");
 });
 
