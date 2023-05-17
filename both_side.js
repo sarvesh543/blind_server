@@ -182,17 +182,17 @@ io.on("connection", (socket) => {
 
     //if any of the socket is null then send error to mobile
 
-    if (1>2) {
-      //
-      console.log("error in connection");
-      socket.emit("notconn", "error in connection");
-    } else {
-      allConnections.push(obj);
+    // if (1>2) {
+    //   //
+    //   console.log("error in connection");
+    //   socket.emit("notconn", "error in connection");
+    // } else {
+      // allConnections.push(obj);
       // console.log("allConnections", allConnections);
 
       console.log("connection established");
       socket.emit("success", "connection established");
-    }
+    // }
   });
 
   //for getting data from mobile
